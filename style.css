@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: auto;
+    height: 600vh;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    background-color: #000000cc;
+    color:#D9C5B2;
+}
+
+nav{
+    color: #F3F3F4;
+    background-color: #14110F;
+    height: 6rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+nav ul{
+    padding-right: 50px;
+    float:right;
+}
+
+nav ul li{
+    display: inline;
+    line-height:90px;
+    padding: 0px 20px 0px;
+}
+
+nav ul li a{
+    color: #F3F3F4;
+    font-size: 1.25rem;
+    text-decoration: underline transparent;
+    text-underline-offset: 10px;
+    transition: text-decoration 0.5s ease-in-out;
+}
+
+nav ul li a:hover{
+    text-decoration-color: #F3F3F4;
+}
+
+nav ul li a::after{
+    transition: all 0.5s ease-in-out;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position:absolute;
+    background-color: #14110F;
+    top: 290rem;
+    left: 0;
+    height: 4rem;
+    width: 100%;
+}
+
+#not-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo{
+    width: auto;
+    max-height: 100%;
+    margin-left: 4rem;
+}
+
+#pre-intro{
+    position: absolute;
+    float:right;
+    top: 10rem;
+    margin: 20px;
+    padding: 20px;
+    width: 75vw;
+    max-width: 200rem;
+    border-radius: 3rem;
+    background-color: #14110F90;
+}
+
+#intro{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+    top: 15rem;
+    margin: 20px;
+    padding: 20px;
+    width: 75vw;
+    max-width:200rem;
+    border-radius: 3rem;
+    background-color:#14110F90;
+}
+
+#intro-text{
+    font-size: 40px;
+    max-width: 20ch;
+    word-spacing: 0.3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#profile-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 20rem;
+    border:3px solid #000;
+    border-radius: 10rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#pre-about{
+    position: absolute;
+    float:right;
+    top: 47rem;
+    margin: 20px;
+    padding: 20px;
+    width: 75vw;
+    max-width: 200rem;
+    border-radius: 3rem;
+    background-color: #14110F90;
+}
+
+#about{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+    top: 52rem;
+    margin: 20px;
+    padding: 20px;
+    width: 75vw;
+    max-width:200rem;
+    border-radius: 3rem;
+    background-color:#14110F90;
+}
+
+#pre-skills{
+    position: absolute;
+    float:right;
+    top: 85rem;
+    margin: 20px;
+    padding: 20px;
+    width: 75vw;
+    max-width: 200rem;
+    border-radius: 3rem;
+    background-color: #14110F90;
+}
+
+#skills{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+    top: 90rem;
+    margin: 20px;
+    padding: 20px;
+    width: 75vw;
+    max-width:200rem;
+    border-radius: 3rem;
+    background-color:#14110F90;
+}
+
+#pre-projects{
+    position: absolute;
+    float:right;
+    top: 120rem;
+    margin: 20px;
+    padding: 20px;
+    width: 75vw;
+    max-width: 200rem;
+    border-radius: 3rem;
+    background-color: #14110F90;
+}
+
+#projects{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-shrink: 1;
+    top: 125rem;
+    margin: 20px;
+    padding: 20px;
+    width: 75vw;
+    max-width:200rem;
+    border-radius: 3rem;
+    background-color:#14110F90;
+}
+
+#personal-website-preview{
+    position: relative;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    height: 20rem;
+    width: auto;
+    outline-style: solid;
+    outline-color: #F3F3F4;
+    outline-width: thin;
+}
+
+#pre-contact{
+    position: absolute;
+    float:right;
+    top: 175rem;
+    margin: 20px;
+    padding: 20px;
+    width: 75vw;
+    max-width: 200rem;
+    border-radius: 3rem;
+    background-color: #14110F90;
+}
+
+#contact{
+    position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-shrink: 1;
+    top: 180rem;
+    margin: 20px;
+    padding: 20px;
+    width: 75vw;
+    max-width:200rem;
+    border-radius: 3rem;
+    background-color:#14110F90;
+}
+
+#contact .other-text #resume-hyperlink{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+#contact .contact-form #submit-button{
+    font-family: "Poppins", sans-serif;
+    color: #D9C5B2;
+    background-color: #000000cc;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    width: 20%;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+#contact .contact-form #submit-button:active{
+    background-color:#14110F90;
+}
+
+#linkedin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#linkedin-logo{
+    height: 2rem;
+    width: auto;
+    border-radius: 0.4rem;
+    margin-right: 0.5rem;
+}
+
+a #linkedin p{
+    color: #F3F3F4;
+    font-size: 20px;
+    margin-right: 4rem;
+}
+
+#github{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a #github p{
+    color: #F3F3F4;
+    font-size: 20px;
+}
+
+#github-logo{
+    height: 2rem;
+    width: auto;
+    border-radius: 0.4rem;
+    margin-right: 0.5rem;
+}
+
+#resume-hyperlink{
+    color: #D9C5B4;
+    text-decoration: underline;
+}
+
+#resume-download{
+    text-decoration: underline;
+}
+
+#resume{
+    height: 50rem;
+    width: auto;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#above-intro{
+    position: absolute;
+    display: block;
+    top: 0rem;
+}
+
+#above-about{
+    position: absolute;
+    display: block;
+    top: 35rem;
+}
+
+#above-skills{
+    position: absolute;
+    display: block;
+    top: 73rem;
+}
+
+#above-projects{
+    position: absolute;
+    display: block;
+    top: 113rem;
+}
+
+#above-contact{
+    position: absolute;
+    display: block;
+    top: 165rem;
+}
+
+#open-menu{
+    display: none;
+    position: fixed;
+    color: #F3F3F4;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+#additional-information{
+    border-radius: 0.5rem;
+    padding: 10px;
+    
+    resize: none;
+}
+
+#check{
+    display: none;
+}
+
+.above-text{
+    color: #F3F3F4;
+    border-color:#14110F;
+    border-style: solid;
+    font-size: 20px;
+}
+
+.above-text p{
+    padding-left: 1.5rem;
+}
+
+.text-container{
+    border-color:#14110F;
+    border-style: solid;
+}
+
+.other-text{
+    margin: 20px;
+    padding: 20px;
+    font-size: 30px;
+    word-spacing: 0.3rem;
+}
+
+.project-title{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    font-size: 25px;
+}
+
+.project-description{
+    margin-left: 2rem;
+    max-width: 65ch;
+}
+
+.contact-form-input{
+    position: relative;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-text{
+    margin: 0.5rem;
+}
+
+
+.contact-form-input .input-box{
+    padding: 0.5rem;
+    margin-bottom: 0.25rem;
+    width: 50%;
+    border-radius: 0.5rem;
+}
+
+
+
+@media (max-width: 960px){
+    #menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #14110F;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #profile-picture{
+        height: 17rem;
+        width: 17rem;
+    }
+
+    #open-menu{
+        display: block;
+        top: 1rem;
+        right: 4rem;
+    }
+
+    #intro-text{
+        font-size: 30px;
+    }
+
+    #personal-website-preview{
+        height: 15rem;
+    }
+
+    #resume{
+        height: 35rem;
+        width: auto;
+    }
+
+    .other-text{
+        font-size: 18px;
+    }
+
+    .project-title{
+        font-size: 15px;
+    }
+
+    .project-description{
+        font-size: 12px;
+        max-width: 60ch;
+    }
+}
+
+@media (max-width: 705px){
+    #menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #14110F;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #open-menu{
+        display: block;
+        top: 1rem;
+        right: 4rem;
+    }
+
+    #intro-text{
+        font-size: 25px;
+    }
+
+    #profile-picture{
+        height: 15rem;
+        width: 15rem;
+    }
+
+    #personal-website-preview{
+        height: 10rem;
+    }
+
+    .above-text{
+        font-size: 15px;
+    }
+
+    .other-text{
+        font-size: 15px;
+    }
+    
+    .project-description{
+        max-width: 45ch;
+    }
+
+}
+
+@media (max-width: 575px){
+    #menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #14110F;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #open-menu{
+        display: block;
+        top: 1rem;
+        right: 4rem;
+    }
+
+    #intro-text{
+        font-size: 20px;
+        max-width: 30ch;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #profile-picture{
+        height: 10rem;
+        width: 10rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    #resume{
+        height: 20rem;
+        width: auto;
+    }
+
+    .project-description{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 490px){
+    #menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #14110F;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #open-menu{
+        display: block;
+        font-size: 2rem;
+        top: 1.5rem;
+        right: 4rem;
+    }
+
+    #intro-text{
+        font-size: 15px;
+        max-width: 30ch;
+        margin-left: 1rem;
+    }
+
+    #profile-picture{
+        height: 7rem;
+        width: 7rem;
+        margin-left: 1rem;
+    }
+    
+    #logo{
+        font-size: 1.75rem;
+        line-height: 4rem;
+        padding-left: 3rem;
+    }
+
+    #personal-website-preview{
+        height: 8rem;
+    }
+
+    nav ul li a{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 345px){
+    #menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #14110F;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #open-menu{
+        display: block;
+        top: 1.75rem;
+        right: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    #intro-text{
+        font-size: 12rem;
+        max-width: 30ch;
+        margin-left: 1rem;
+    }
+
+    #profile-picture{
+        height: 5rem;
+        width: 5rem;
+        margin: 1rem;
+    }
+    
+    #logo{
+        font-size: 1.25rem;
+        line-height: 4rem;
+        padding-left: 3rem;
+    }
+
+    #personal-website-preview{
+        height: 6rem;
+    }
+
+    .project-description{
+        font-size: 7px;
+    }
+
+    #resume{
+        height: 15rem;
+        width: auto;
+    }
+    
+    .above-text{
+        font-size: 12px;
+    }
+
+    .open-menu{
+        top: 1.75rem;
+        right: 2.5rem;
+        font-size: 1.5rem;
+    }
+
+    .project-title{
+        font-size: 12px;
+    }
+
+    nav ul li a{
+        font-size: 0.75rem;
+    }
+
+}

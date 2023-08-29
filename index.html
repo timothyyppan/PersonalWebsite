@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Timothy's Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#above-intro">
+        <img src="images/logo.jpg" id="logo">
+      </a>
+      <ul>
+      <input type="checkbox" id="check" />
+        <span id="menu">
+          <li><a href="#above-intro">Home</a></li>
+          <li><a href="#above-about">About</a></li>
+          <li><a href="#above-skills">Skills</a></li>
+          <li><a href="#above-projects">Projects</a></li>
+          <li><a href="#above-contact">Contact</a></li>
+          <label for="check" id="open-menu">&#9776</label>
+        </span>
+      </ul>
+    </nav>
+    <div id="not-nav">
+      <div id="above-intro"></div>
+      <div id="pre-intro" class="above-text">
+        <p>timothypan.com/Greeting</p>
+      </div>
+      <div class="text-container" id="intro">
+        <h1 id="intro-text">
+          hey, i'm timothy <br> (tim for short)
+        </h1>
+        <img id="profile-picture" src="images/profilepicture.jpg" />
+      </div>
+      <div id="above-about"></div>
+      <div id="pre-about" class="above-text">
+        <p>timothypan.com/About-me</p>
+      </div>
+      <div class="text-container" id="about">
+        <h2 class="other-text">
+          i am a first year computer engineering student at the university of waterloo. 
+          i am interested in software development, specifically, front end and full stack development.
+        </h2>
+      </div>
+      <div id="above-skills"></div>
+      <div id="pre-skills" class="above-text">
+        <p>timothypan.com/Skills</p>
+      </div>
+      <div class="text-container" id="skills">
+        <h2 class="other-text">
+          for front end development, i am experienced in
+          HTML, CSS, and JavaScript. for back end development, i
+          am experienced in Java, and Python.
+          </h2>
+      </div>
+      <div id="above-projects"></div>
+      <div id="pre-projects" class="above-text">
+        <p>timothypan.com/Projects</p>
+      </div>
+      <div class="text-container" id="projects">
+        <div id="personal-website">
+          <h2 class="project-title">Personal Website: HTML & CSS </h2>
+          <img id="personal-website-preview" src="images/personal-website-project-preview.png">
+          <p class="project-description">
+            this is my personal portfolio website where i show my software development projects. i used HTML, CSS, and JavaScript to develop the website.
+            in the future, i intend on using Node.js and MySQL to take in and store the contact information of people who would like to get in touch with me. 
+          </p>
+        </div>
+      </div>
+      <div id="above-contact"></div>
+      <div id="pre-contact" class="above-text">
+        <p>timothypan.com/Contact-me</p>
+      </div>
+      <div class="text-container" id="contact">
+        <img src="images/resume.png" id="resume">
+        <h2 class="other-text">
+          download my resume <a href="images/TimothyPanResume.pdf" target="_blank" id="resume-hyperlink" >here</a>
+        </h2>
+        <div class="contact-form">
+          <h2 class="other-text">leave your information so we can get in touch</h2>
+          <div class="contact-form-input">
+          <h3 class="other-text form-text">name:</h3>
+          <input type="text" class="input-box">
+          <h3 class="other-text form-text">email:</h3>
+          <input type="text" class="input-box">
+          <h3 class="other-text form-text">additional information:</h3>
+          <textarea name="additional-information" id="additional-information" cols="40" rows="10"></textarea>
+          <button id="submit-button">submit</button>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <a href="https://www.linkedin.com/in/timothyyppan/" target="_blank">
+          <div id="linkedin">
+            <img src="images/linkedin-logo.png" id="linkedin-logo">
+            <p>LinkedIn</p>
+          </div>
+        </a>
+        <a href="https://github.com/timothyyppan" target="_blank">
+          <div id="github">
+            <img src="images/github-logo.png" id="github-logo">
+            <p>GitHub</p>
+          </div>
+        </a>
+      </footer>
+    </div>
+    <script src="open-menu.js"></script>
+  </body>
+</html>
