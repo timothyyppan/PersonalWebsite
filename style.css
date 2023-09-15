@@ -523,6 +523,11 @@ a #github p{
         width: 100vw;
         border-radius: 0;
     }
+
+    #profile-picture{
+        height: 10rem;
+        width: 10rem;
+    }
     
     .above-text{
         width: 100vw;
@@ -530,7 +535,7 @@ a #github p{
     }
 
     #intro-text{
-        font-size: 1.25rem;
+        font-size: 1.2rem;
     }
 
     .other-text{
@@ -607,47 +612,37 @@ a #github p{
         font-size: 1rem;
     }
 }
-}
 
-@media (max-width: 350px){
-    footer{
-        top: 225rem;
+@media (max-width: 420px){
+    #intro-text{
+        font-size: 0.9rem;
     }
-}
 
-/*
-Completely redsign screensizes <= 490px for mobile
-Make the design much larger and visible on mobile devices
-*/
-/*
-@media (max-width: 490px){
     #profile-picture{
-        height: 5rem;
-        width: 5rem;
-        margin-left: 0.25rem;
-        margin-right: 0.25rem;
+        width: 8rem;
+        height: 8rem;
     }
 }
 
 @media (max-width: 350px){
     #intro-text{
-        font-size: 0.6rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .other-text{
+        font-size: 0.9rem;
     }
     
     #profile-picture{
-        height: 3.5rem;
-        width: 3.5rem;
+        height: 6rem;
+        width: 6rem;
     }
 
-    .above-text{
-        font-size: 0.5rem;
-        padding: 1.8rem;
+    .project-description{
+        font-size: 0.9rem;
     }
 
-    .above-text p{
-        padding-left: 0.25rem;
+    footer{
+        top: 225rem;
     }
 }
-*/
