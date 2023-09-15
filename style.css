@@ -598,6 +598,15 @@ a #github p{
     footer{
         top: 235rem;
     }
+
+    footer a #linkedin p{
+        font-size: 1rem;
+    }
+
+    footer a #github p{
+        font-size: 1rem;
+    }
+}
 }
 
 @media (max-width: 350px){
