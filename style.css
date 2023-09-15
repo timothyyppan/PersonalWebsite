@@ -119,9 +119,13 @@ nav ul li a::after{
     top: 190rem;
 }
 
+.nav-skip{
+    position: absolute;
+}
+
 .above-text{
     position: absolute;
-    float:right;
+    float: right;
     margin: 1.25rem;
     padding: 1.25rem;
     width: 75vw;
