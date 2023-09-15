@@ -28,7 +28,7 @@ nav{
     height: 6rem;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
 }
 
 nav ul{
@@ -129,6 +129,7 @@ nav ul li a::after{
     border-radius: 3rem;
     color: #F3F3F4;
     border-color: #14110F;
+    z-index: 10;
     background-color: #14110F90;
     border-style: solid;
     font-size: 1.25rem;
@@ -515,6 +516,71 @@ a #github p{
     .project-title{
         font-size: 1rem;
     }
+}
+
+@media (max-width: 490px){
+    .text-container{
+        width: 100vw;
+        border-radius: 0;
+    }
+    
+    .above-text{
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    #pre-intro{
+        top: 10.5rem;
+    }
+    
+    #pre-about{
+        top: 47.5rem;
+    }
+    
+    #pre-skills{
+        top: 85.5rem;
+    }
+    
+    #pre-projects{
+        top: 120.5rem;
+    }
+    
+    #pre-contact{
+        top: 180.5rem;
+    }
+
+    .mobile-search{
+        position: absolute;
+        width: 90%;
+        height: 2rem;
+        border-radius: 3rem;
+        background-color: #505050;
+        z-index: 2;
+    }
+
+    #intro-mobile-search{
+        top: 13rem;
+    }
+
+    #about-mobile-search{
+        top: 50rem;
+    }
+
+    #skills-mobile-search{
+        top: 88rem;
+    }
+
+    #projects-mobile-search{
+        top: 123rem;
+    }
+
+    #contact-mobile-search{
+        top: 183rem;
+    }
+}
+
+@media (max-width: 350px){
+
 }
 
 /*
