@@ -529,6 +529,18 @@ a #github p{
         border-radius: 0;
     }
 
+    #intro-text{
+        font-size: 1.25rem;
+    }
+
+    .other-text{
+        font-size: 1rem;
+    }
+
+    .project-description{
+        font-size: 1rem;
+    }
+
     #pre-intro{
         top: 10.5rem;
     }
@@ -577,10 +589,21 @@ a #github p{
     #contact-mobile-search{
         top: 183rem;
     }
+
+    #resume{
+        max-width: 30rem;
+        max-height: 65rem;
+    }
+
+    footer{
+        top: 235rem;
+    }
 }
 
 @media (max-width: 350px){
-
+    footer{
+        top: 225rem;
+    }
 }
 
 /*
