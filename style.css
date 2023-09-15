@@ -615,7 +615,7 @@ a #github p{
 
 @media (max-width: 420px){
     #intro-text{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     #profile-picture{
@@ -626,11 +626,11 @@ a #github p{
 
 @media (max-width: 350px){
     #intro-text{
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .other-text{
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
     
     #profile-picture{
